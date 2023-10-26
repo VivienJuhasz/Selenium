@@ -3,9 +3,7 @@ package hu.masterfield.test;
 import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSetting;
 import hu.masterfield.browser.WebBrowserType;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.By;
@@ -18,7 +16,7 @@ public class Feladat03 {
     private static WebDriver driver;
     private static String baseURL;
 
-    @BeforeEach
+    @BeforeAll
     public static void setup() {
         driver = WebBrowser.createDriver(WebBrowserType.Chrome);
         driver.manage().window().maximize();
@@ -26,8 +24,8 @@ public class Feladat03 {
         baseURL = WebBrowserSetting.getBaseURL();
     }
 
-    @AfterEach
-    public void tearDown() {
+    @AfterAll
+    public static void tearDown() {
         //driver.close(); az aktuális tabot zárja be
         driver.quit(); // az egész ablakot bezárja
     }
