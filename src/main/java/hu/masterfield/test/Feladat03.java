@@ -15,11 +15,11 @@ import java.time.Duration;
 
 public class Feladat03 {
 
-    private WebDriver driver;
-    private String baseURL;
+    private static WebDriver driver;
+    private static String baseURL;
 
     @BeforeEach
-    public void setup() {
+    public static void setup() {
         driver = WebBrowser.createDriver(WebBrowserType.Chrome);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
