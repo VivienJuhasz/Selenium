@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b70c9f9-6b7b-46dd-8017-09012eda96a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="9b70c9f9-6b7b-46dd-8017-09012eda96a8" name="Changes" comment="peti">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,24 +28,39 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2XCk5LzQ5kfklS3ueEFIdpuAS3j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Masterfield/SeleniumBasic"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Masterfield/SeleniumBasic&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
+    <configuration name="Feladat01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumBasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.masterfield.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.masterfield.test" />
+      <option name="MAIN_CLASS_NAME" value="hu.masterfield.test.Feladat01" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="hu.masterfield.test in SeleniumBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumBasic" />
       <extension name="coverage">
@@ -56,6 +77,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Feladat01" />
         <item itemvalue="JUnit.hu.masterfield.test in SeleniumBasic" />
       </list>
     </recent_temporary>
@@ -69,6 +91,19 @@
       <option name="presentableId" value="Default" />
       <updated>1698140266656</updated>
     </task>
+    <task id="LOCAL-00001" summary="peti">
+      <option name="closed" value="true" />
+      <created>1698337889764</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698337889764</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="peti" />
+    <option name="LAST_COMMIT_MESSAGE" value="peti" />
   </component>
 </project>
