@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b70c9f9-6b7b-46dd-8017-09012eda96a8" name="Changes" comment="peti">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat18.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat18B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat20B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat21B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat23.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Konzultacio/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Konzultacio/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Konzultacio/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Konzultacio/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Konzultacio/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Konzultacio/Konzultacio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Konzultacio/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat25.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat25B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat28.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,16 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Selenium&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Masterfield/SeleniumBasic&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Selenium",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Masterfield/SeleniumBasic",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hu.masterfield.test" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Feladat01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumBasic" />
@@ -182,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699038669367</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="peti">
+      <option name="closed" value="true" />
+      <created>1699384671724</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699384671724</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
