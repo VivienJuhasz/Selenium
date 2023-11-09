@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b70c9f9-6b7b-46dd-8017-09012eda96a8" name="Changes" comment="peti">
-      <change afterPath="$PROJECT_DIR$/Konzultacio/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Konzultacio/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Konzultacio/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Konzultacio/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Konzultacio/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Konzultacio/Konzultacio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Konzultacio/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat25.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat25B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat26.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat28.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat29.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat30.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat31.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/test/Feladat32.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,10 +57,17 @@
     "git-widget-placeholder": "Selenium",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Masterfield/SeleniumBasic",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Masterfield\SeleniumBasic" />
+      <recent name="C:\Masterfield\SeleniumBasic\src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hu.masterfield.test" />
     </key>
@@ -199,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699384671724</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="peti">
+      <option name="closed" value="true" />
+      <created>1699552541931</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699552541931</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
