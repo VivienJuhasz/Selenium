@@ -18,7 +18,7 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
-public class Feladat35 {
+public class Feladat36 {
     private WebDriver driver;
     private String baseURL;
 
@@ -36,16 +36,18 @@ public class Feladat35 {
     }
 
     @Test
-    public void testFeladat35() throws InterruptedException {
+    public void testFeladat36() throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
 
         driver.findElement(By.linkText("CHAPTER6")).click();
         Thread.sleep(3000);
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.findElement(By.id("ajaxbutton3")).click();
-        Thread.sleep(13000);  // NEM SZABAD ÍGY HASZNÁLNI
+
         try {
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("newElementInTheDom")));
             WebElement newWebElement = driver.findElement(By.id("newElementInTheDom"));
             assertTrue(newWebElement.getText().equals("Hello, I'm a new element in the DOM."));
         } catch (NoSuchElementException ex) {

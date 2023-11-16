@@ -3,22 +3,18 @@ package hu.masterfield.test;
 import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSetting;
 import hu.masterfield.browser.WebBrowserType;
+import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
-
-public class Feladat35 {
+public class Feladat41 {
     private WebDriver driver;
     private String baseURL;
 
@@ -26,7 +22,7 @@ public class Feladat35 {
     public void setup() {
         driver = WebBrowser.createDriver(WebBrowserType.Chrome);
         driver.manage().window().maximize();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         baseURL = WebBrowserSetting.getBaseURL();
     }
 
@@ -36,21 +32,23 @@ public class Feladat35 {
     }
 
     @Test
-    public void testFeladat35() throws InterruptedException {
-        driver.get(baseURL);
+    public void testFeladat40() throws InterruptedException, IOException {
+
+            driver.get(baseURL);
         Thread.sleep(3000);
 
-        driver.findElement(By.linkText("CHAPTER6")).click();
-        Thread.sleep(3000);
-
-        driver.findElement(By.id("ajaxbutton3")).click();
-        Thread.sleep(13000);  // NEM SZABAD ÍGY HASZNÁLNI
-        try {
-            WebElement newWebElement = driver.findElement(By.id("newElementInTheDom"));
-            assertTrue(newWebElement.getText().equals("Hello, I'm a new element in the DOM."));
-        } catch (NoSuchElementException ex) {
-            fail();
+        List<WebElement> chapters = driver.findElements(By.partialLinkText("CHAPTER"));
+        for (int i = 0; i < chapters.size(); i++) {
+            chapters = driver.findElements(By.partialLinkText("CHAPTER"));
+            Thread.sleep(2000);
+            String linkText = chapters.get(i).getText();
+            chapters.get(i).click();
+            Thread.sleep(2000);
+            File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(screenshot, new File(WebBrowserSetting.getPathToScreenshots() + linkText + ".png"));
+            driver.navigate().back();
         }
+
 
     }
 

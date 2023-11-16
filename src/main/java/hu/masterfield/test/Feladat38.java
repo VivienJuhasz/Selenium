@@ -11,6 +11,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -18,7 +20,7 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
-public class Feladat35 {
+public class Feladat38 {
     private WebDriver driver;
     private String baseURL;
 
@@ -26,7 +28,7 @@ public class Feladat35 {
     public void setup() {
         driver = WebBrowser.createDriver(WebBrowserType.Chrome);
         driver.manage().window().maximize();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         baseURL = WebBrowserSetting.getBaseURL();
     }
 
@@ -36,21 +38,32 @@ public class Feladat35 {
     }
 
     @Test
-    public void testFeladat35() throws InterruptedException {
+    public void testFeladat38() throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
 
         driver.findElement(By.linkText("CHAPTER6")).click();
         Thread.sleep(3000);
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        driver.findElement(By.id("ajaxbutton")).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("ajaxbutton2")));
+        driver.findElement(By.id("ajaxbutton2")).click();
+        WebElement ajaxButtonForTextTextbox = driver.findElement(By.id("ajaxbuttontextbox2"));
+        wait.until(ExpectedConditions.textToBePresentInElementValue(ajaxButtonForTextTextbox, "Hello AJAX"));
+        ajaxButtonForTextTextbox.clear();
+        ajaxButtonForTextTextbox.sendKeys("Hello New AJAX");
+
         driver.findElement(By.id("ajaxbutton3")).click();
-        Thread.sleep(13000);  // NEM SZABAD ÍGY HASZNÁLNI
-        try {
-            WebElement newWebElement = driver.findElement(By.id("newElementInTheDom"));
-            assertTrue(newWebElement.getText().equals("Hello, I'm a new element in the DOM."));
-        } catch (NoSuchElementException ex) {
-            fail();
-        }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("newElementInTheDom")));
+
+
+        WebElement ajaxButtonTimeThree = driver.findElement(By.id("ajaxbuttontime3"));
+        ajaxButtonTimeThree.clear();
+        ajaxButtonTimeThree.sendKeys("55");
+        Thread.sleep(3000);
 
     }
 
