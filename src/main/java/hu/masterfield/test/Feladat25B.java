@@ -14,20 +14,6 @@ import org.openqa.selenium.WebElement;
 import java.time.Duration;
 import java.util.List;
 
-import hu.masterfield.browser.WebBrowser;
-import hu.masterfield.browser.WebBrowserSetting;
-import hu.masterfield.browser.WebBrowserType;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.time.Duration;
-import java.util.List;
-
 public class Feladat25B {
     private WebDriver driver;
     private String baseURL;
@@ -111,4 +97,5 @@ public class Feladat25B {
         }
         return webElement;
     }
+
 }

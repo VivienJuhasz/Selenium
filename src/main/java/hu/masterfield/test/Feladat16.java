@@ -10,10 +10,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.List;
+import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Feladat16 {
     private WebDriver driver;
@@ -62,15 +64,19 @@ public class Feladat16 {
 
         weightTo = weightFrom;
 
-        do {weightWebElement.clear();
-            weightWebElement.sendKeys(String.valueOf(weightTo)); //("" + wegihtTo) Ugyan az! Stringgé alakít, mert azt csak összekonkatanálni lehet összeadni nem
+        do {
+            weightWebElement.clear();
+            weightWebElement.sendKeys("" + weightTo);
             calculateButtonWebElement.click();
             category = bmiCategoryWebElement.getAttribute("value");
             weightTo++;
-
         } while (category.equals("Overweight"));
-        System.out.println("Weight from: " + (weightFrom - 1));
-        System.out.println("Weight to: " + (weightTo - 1));
+
+        System.out.println("Weight from: " + (weightFrom-1));
+        System.out.println("Weight to: " + (weightTo-1));
+
+
+
     }
 
     public void showInfos(WebElement webElement, String elementName) {

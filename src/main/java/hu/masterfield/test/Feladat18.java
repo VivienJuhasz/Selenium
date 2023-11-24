@@ -9,10 +9,13 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Feladat18 {
     private WebDriver driver;
@@ -39,7 +42,7 @@ public class Feladat18 {
         driver.findElement(By.linkText("CHAPTER1")).click();
         Thread.sleep(3000);
 
-        WebElement radioButtonWebElement = driver. findElement(By.id("radiobuttonJava"));
+        WebElement radioButtonWebElement = driver.findElement(By.id("radiobuttonJava"));
         System.out.println("Firstly: " + radioButtonWebElement.isSelected());
         if (radioButtonWebElement.isSelected()) {
             System.out.println("1. Do nothing.");
@@ -48,18 +51,19 @@ public class Feladat18 {
             System.out.println("1. Click done.");
         }
         assertTrue(radioButtonWebElement.isSelected());
-        System.out.println("After first section is radioButton selected? : " + radioButtonWebElement.isSelected());
+        System.out.println("After first section is radioButton selected? :" + radioButtonWebElement.isSelected());
 
         Thread.sleep(3000);
         if (radioButtonWebElement.isSelected()) {
             radioButtonWebElement.click();
             System.out.println("2. Click done.");
         } else {
-            System.out.println("1. Do nothing.");
+            System.out.println("2. Do nothing.");
         }
         assertTrue(radioButtonWebElement.isSelected());
-        System.out.println("After second section is radioButton selected? :" + radioButtonWebElement.isSelected());
+        System.out.println("After second section is radioButton selected? : " + radioButtonWebElement.isSelected());
         Thread.sleep(3000);
+
     }
 
     public void showInfos(WebElement webElement, String elementName) {
@@ -69,4 +73,3 @@ public class Feladat18 {
     }
 
 }
-

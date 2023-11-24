@@ -17,7 +17,7 @@ public class Feladat02 {
 
     @BeforeEach
     public void setup() {
-        driver = WebBrowser.createDriver(WebBrowserType.Chrome);
+        driver = WebBrowser.createDriver(WebBrowserType.EdgeWDM);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         baseURL = WebBrowserSetting.getBaseURL();
@@ -25,8 +25,7 @@ public class Feladat02 {
 
     @AfterEach
     public void tearDown() {
-        //driver.close(); az aktuális tabot zárja be
-        driver.quit(); // az egész ablakot bezárja
+        driver.quit();
     }
 
     @Test

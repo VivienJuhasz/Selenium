@@ -41,7 +41,7 @@ public class Feladat14 {
         Thread.sleep(3000);
 
         WebElement paragraphOneWebElement = driver.findElement(By.cssSelector("div#top5 > p"));
-        showInfos(paragraphOneWebElement, "Paragraph 1");
+        showInfos(paragraphOneWebElement, "Paragraph1");
         assertEquals("Paragraph 1", paragraphOneWebElement.getText());
 
         WebElement paragraphTwoWebElement = driver.findElement(By.cssSelector("div#top5 > p + p"));

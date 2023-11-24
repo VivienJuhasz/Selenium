@@ -20,7 +20,7 @@ public class Feladat03 {
 
     @BeforeEach
     public void setup() {
-        driver = WebBrowser.createDriver(WebBrowserType.Chrome);
+        driver = WebBrowser.createDriver(WebBrowserType.EdgeWDM);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         baseURL = WebBrowserSetting.getBaseURL();
@@ -28,13 +28,12 @@ public class Feladat03 {
 
     @AfterEach
     public void tearDown() {
-        //driver.close(); az aktuális tabot zárja be
-        driver.quit(); // az egész ablakot bezárja
+        driver.quit();
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"CHAPTER1","CHAPTER2", "CHAPTER3", "CHAPTER4"})
-    public void testFeladat03(String chapter) throws InterruptedException {
+    @ValueSource(strings = {"CHAPTER1", "CHAPTER2", "CHAPTER3", "CHAPTER4", "CHAPTER5"})
+    public void testFeladat02(String chapter) throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
         driver.findElement(By.linkText(chapter)).click();

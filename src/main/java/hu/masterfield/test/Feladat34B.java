@@ -34,7 +34,7 @@ public class Feladat34B {
     }
 
     @Test
-    public void testFeladat34() throws InterruptedException {
+    public void testFeladat34B() throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
 
@@ -104,4 +104,5 @@ public class Feladat34B {
         }
         return webElement;
     }
+
 }

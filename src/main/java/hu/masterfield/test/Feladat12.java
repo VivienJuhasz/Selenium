@@ -1,36 +1,45 @@
 package hu.masterfield.test;
+
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class Feladat12 extends BaseTest {
 
-    WebElement checkerWebElement;
     @Test
-    public void testFeladat12() throws InterruptedException {
+    public void testFeladat12() throws Exception {
         driver.get(baseURL);
-        Thread.sleep(3000);
-
         driver.findElement(By.linkText("CHAPTER2")).click();
 
-        Thread.sleep(3000);
-
-        checkerWebElement = driver.findElement(By.id("buttonClicker"));
-
-        buttonClicker(By.id("but1"), "Button with ID");
-        buttonClicker(By.cssSelector("input[type='button'][value='Sibling Button']"), "Sibling Button");
-        buttonClicker(By.name("but2"), "Button with name");
-        buttonClicker(By.xpath("//input[@type='button' and @value='Random']"), "Random");
-        buttonClicker(By.xpath("//input[@type='button' and @value='Verify this button here' and @name='verifybutton']"), "Verify this button here");
-        buttonClicker(By.cssSelector("input[type='button'][name='verifybutton1'][value='chocolate']"), "chocolate");
-
-    }
-
-    public void buttonClicker(By locator, String expected) throws InterruptedException {
-        driver.findElement(locator).click();
-        assertEquals(expected, checkerWebElement.getAttribute("value"));
+        WebElement checkerElement = driver.findElement(By.id("buttonClicker"));
         Thread.sleep(2000);
+
+        driver.findElement(By.name("but2")).click();
+        assertEquals("Button with name", checkerElement.getAttribute("value"));
+        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//input[@value='Random' and @type='button']")).click();
+        assertEquals("Random", checkerElement.getAttribute("value"));
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("but1")).click();
+        assertEquals("Button with ID", checkerElement.getAttribute("value"));
+        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//input[@value='Sibling Button' and @type='button']")).click();
+        assertEquals("Sibling Button", checkerElement.getAttribute("value"));
+        Thread.sleep(2000);
+
+        driver.findElement(By.name("verifybutton")).click();
+        assertEquals("Verify this button here", checkerElement.getAttribute("value"));
+        Thread.sleep(2000);
+
+        driver.findElement(By.xpath("//input[@value='chocolate' and @type='button' and @name='verifybutton1']")).click();
+        assertEquals("chocolate", checkerElement.getAttribute("value"));
+        Thread.sleep(2000);
+
+
     }
 }

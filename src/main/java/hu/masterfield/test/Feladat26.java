@@ -1,6 +1,5 @@
 package hu.masterfield.test;
 
-
 import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSetting;
 import hu.masterfield.browser.WebBrowserType;
@@ -55,12 +54,47 @@ public class Feladat26 {
         Actions builder = new Actions(driver);
         WebElement htmlTag = driver.findElement(By.tagName("html"));
         htmlTag.sendKeys(Keys.END);
-/*         VAGY
-        builder.sendKeys(Keys.PAGE_DOWN)
+
+        builder.click(options.get(1))
+                .keyDown(Keys.CONTROL)
+                .click(options.get(3))
+                .keyUp(Keys.CONTROL)
                 .build()
                 .perform();
+        Thread.sleep(2000);
+
+        for (WebElement option : ddlActual.getAllSelectedOptions()) {
+            actual.add(option.getText());
+        }
+        for(WebElement option: ddlExpected.getOptions()) {
+            expected.add(option.getText());
+        }
+        assertArrayEquals(expected.toArray(), actual.toArray());
+    }
+
+    @Test
+    public void testFeladat26SHIFT() throws InterruptedException {
+        driver.get(baseURL);
         Thread.sleep(3000);
-*/        builder.keyDown(Keys.SHIFT)
+
+        driver.findElement(By.linkText("CHAPTER17")).click();
+
+        WebElement multipleSelectWebElement = driver.findElement(By.id(("multipleSelect")));
+
+        List<String> actual = new ArrayList<>();
+        List<String> expected = new ArrayList<>();
+
+        Select ddlExpected = new Select(driver.findElement(By.id("checkMultipleSelection")));
+        Select ddlActual = new Select(multipleSelectWebElement);
+
+        List<WebElement> options = multipleSelectWebElement.findElements(By.tagName("option"));
+        Thread.sleep(2000);
+
+        Actions builder = new Actions(driver);
+        WebElement htmlTag = driver.findElement(By.tagName("html"));
+        htmlTag.sendKeys(Keys.END);
+
+        builder.keyDown(Keys.SHIFT)
                 .click(options.get(0))
                 .click(options.get(1))
                 .click(options.get(2))
@@ -73,7 +107,7 @@ public class Feladat26 {
         for (WebElement option : ddlActual.getAllSelectedOptions()) {
             actual.add(option.getText());
         }
-        for (WebElement option : ddlExpected.getOptions()) {
+        for(WebElement option: ddlExpected.getOptions()) {
             expected.add(option.getText());
         }
         assertArrayEquals(expected.toArray(), actual.toArray());
@@ -130,4 +164,5 @@ public class Feladat26 {
         }
         return webElement;
     }
+
 }

@@ -7,7 +7,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -38,9 +37,9 @@ public class Feladat08 {
         driver.get(baseURL);
         Thread.sleep(3000);
         driver.findElement(By.linkText("CHAPTER1")).click();
+
         WebElement webElement = driver.findElement(By.xpath("//input"));
         showInfos(webElement, "inputElement");
-        //Hide-olt az element, ezért (0, 0)
     }
 
     public void showInfos(WebElement webElement, String elementName) {

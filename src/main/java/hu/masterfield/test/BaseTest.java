@@ -14,6 +14,7 @@ public class BaseTest {
     protected WebDriver driver;
     protected String baseURL;
 
+
     @BeforeEach
     public void setup() {
         driver = WebBrowser.createDriver(WebBrowserType.Chrome);
@@ -26,9 +27,11 @@ public class BaseTest {
     public void tearDown() {
         driver.quit();
     }
+
     public void showInfos(WebElement webElement, String elementName) {
         System.out.println("Tag name of " + elementName + " : " + webElement.getTagName());
         System.out.println("Location of " + elementName + " : " + webElement.getLocation());
         System.out.println("Text of " + elementName + " : " + webElement.getText());
     }
+
 }

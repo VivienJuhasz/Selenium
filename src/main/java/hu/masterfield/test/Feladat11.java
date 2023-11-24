@@ -38,6 +38,7 @@ public class Feladat11 {
         Thread.sleep(3000);
 
         driver.findElement(By.linkText("CHAPTER1")).click();
+
         Thread.sleep(3000);
 
         WebElement homePageWebElement = driver.findElement(By.partialLinkText("Home"));
@@ -58,4 +59,5 @@ public class Feladat11 {
         System.out.println("Location of " + elementName + " : " + webElement.getLocation());
         System.out.println("Text of " + elementName + " : " + webElement.getText());
     }
+
 }

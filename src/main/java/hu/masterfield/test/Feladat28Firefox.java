@@ -32,7 +32,7 @@ public class Feladat28Firefox {
     }
 
     @Test
-    public void testFeladat28() throws InterruptedException {
+    public void testFeladat28Firefox() throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
 
@@ -105,4 +105,5 @@ public class Feladat28Firefox {
         }
         return webElement;
     }
+
 }

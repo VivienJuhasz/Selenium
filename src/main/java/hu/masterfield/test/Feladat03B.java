@@ -34,7 +34,7 @@ public class Feladat03B {
 
     @ParameterizedTest
     @ValueSource(strings = {"CHAPTER1", "CHAPTER2", "CHAPTER3", "CHAPTER4", "CHAPTER5"})
-    public void testFeladat03B(String chapter) throws InterruptedException {
+    public void testFeladat02(String chapter) throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
         driver.findElement(By.linkText(chapter)).click();

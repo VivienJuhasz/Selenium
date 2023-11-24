@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Feladat01 {
+
     @Test
     public void testFeladat01() {
         String expected = "JUnit Jupiter is working.";
@@ -12,3 +13,4 @@ public class Feladat01 {
         assertEquals(expected, actual);
     }
 }
+

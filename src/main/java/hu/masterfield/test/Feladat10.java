@@ -37,8 +37,8 @@ public class Feladat10 {
         driver.get(baseURL);
         Thread.sleep(3000);
 
-//      WebElement chapterWebElement = driver.findElement(By.xpath("//a[text()='Chapter1']"));
         WebElement chapterWebElement = driver.findElement(By.linkText("CHAPTER1"));
+//        WebElement chapterWebElement = driver.findElement(By.xpath("//a[text()='Chapter1']"));
         showInfos(chapterWebElement, "Chapter1");
     }
 

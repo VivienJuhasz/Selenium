@@ -1,6 +1,5 @@
 package hu.masterfield.test;
 
-
 import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSetting;
 import hu.masterfield.browser.WebBrowserType;

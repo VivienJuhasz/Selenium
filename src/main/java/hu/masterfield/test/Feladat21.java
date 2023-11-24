@@ -79,8 +79,8 @@ public class Feladat21 {
             }
             if ((minIndex>=0) && (maxIndex>=0)) {
                 System.out.println("ServiceName: " + serviceName + " Company with minimum price: "
-                        + headers.get(minIndex).getText() + " : " + min
-                        + " Comapny with maximum price: " + headers.get(maxIndex).getText() + " : " + max);
+                + headers.get(minIndex).getText() + " : " + min
+                + " Comapny with maximum price: " + headers.get(maxIndex).getText() + " : " + max);
             }
         }
 
@@ -102,4 +102,5 @@ public class Feladat21 {
         System.out.println("Location of " + elementName + " : " + webElement.getLocation());
         System.out.println("Text of " + elementName + " : " + webElement.getText());
     }
+
 }

@@ -74,4 +74,5 @@ public class Feladat20B {
         System.out.println("Location of " + elementName + " : " + webElement.getLocation());
         System.out.println("Text of " + elementName + " : " + webElement.getText());
     }
+
 }

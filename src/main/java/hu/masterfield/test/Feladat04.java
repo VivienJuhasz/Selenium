@@ -34,8 +34,9 @@ public class Feladat04 {
 
     @DisplayName("RepeatedTest")
     @RepeatedTest( value = 5, name = "{displayName} -> {currentRepetition}/{totalRepetitions}}")
-    public void testFeladat04() throws InterruptedException {
+    public void testFeladat02() throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
     }
+
 }

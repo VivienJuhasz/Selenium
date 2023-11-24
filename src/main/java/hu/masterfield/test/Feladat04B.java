@@ -1,4 +1,5 @@
 package hu.masterfield.test;
+
 import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSetting;
 import hu.masterfield.browser.WebBrowserType;
@@ -27,8 +28,9 @@ public class Feladat04B {
 
     @DisplayName("RepeatedTest")
     @RepeatedTest( value = 5, name = "{displayName} -> {currentRepetition}/{totalRepetitions}}")
-    public void testFeladat04B() throws InterruptedException {
+    public void testFeladat02() throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
     }
+
 }

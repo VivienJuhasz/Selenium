@@ -80,4 +80,5 @@ public class Feladat22 {
         System.out.println(name + ": Text of " + webElement.getText());
         System.out.println("*************  " + name + "  *************");
     }
+
 }

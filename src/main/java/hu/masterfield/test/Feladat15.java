@@ -4,18 +4,19 @@ import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSetting;
 import hu.masterfield.browser.WebBrowserType;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.opentest4j.AssertionFailedError;
 
+import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Feladat15 {
     private WebDriver driver;
@@ -46,7 +47,7 @@ public class Feladat15 {
         WebElement dateInputboxWebElement = driver.findElement(By.id("dateInput"));
         if ((dateInputboxWebElement.isDisplayed()) && (dateInputboxWebElement.isEnabled())) {
             if (dateInputboxWebElement.getText().isEmpty()) {
-                //To DO NOTHING
+                // TO DO NOTHING
             } else {
                 dateInputboxWebElement.clear();
             }
@@ -59,8 +60,9 @@ public class Feladat15 {
         WebElement auctionWebElement = driver.findElement(By.id("auction"));
         String textOfAuctionWebElement = auctionWebElement.getText();
         System.out.println("Text of the auction div: " + textOfAuctionWebElement);
-        assertTrue((textOfAuctionWebElement.contains("The highest bid is")) && textOfAuctionWebElement.contains("50."));
+        assertTrue(((textOfAuctionWebElement.contains("The highest bid is")) && (textOfAuctionWebElement.contains("50."))));
         assertEquals("The highest bid is \u00a350.", textOfAuctionWebElement);
+
     }
 
     public void showInfos(WebElement webElement, String elementName) {

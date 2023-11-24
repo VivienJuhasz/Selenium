@@ -49,24 +49,28 @@ public class Feladat07 {
             // TO DO NOTHING
         } else {
             try {
-            textboxWebElement.clear();
-            System.out.println("Clear finished...");
-        } catch (Exception ex) {
+                textboxWebElement.clear();
+                System.out.println("Clear finished...");
+            } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }
         }
+
         Thread.sleep(3000);
         textboxWebElement.sendKeys("szöveg");
         System.out.println("After sendKeys textbox's text is: " + textboxWebElement.getText());
         int round = textboxWebElement.getText().length();
-        System.out.println("Length of the text: " + round);
+        System.out.println("Length of th text: " + round);
 
         for (int i=0; i < round; i++) {
             Thread.sleep(2000);
             textboxWebElement.sendKeys(Keys.HOME);
             textboxWebElement.sendKeys(Keys.DELETE);
-            System.out.println(i + ": textboxWebELement's text is: " + textboxWebElement.getText());
+            System.out.println(i + ": textboxWebElement's text is: " + textboxWebElement.getText());
         }
+
+
+
     }
 
     public void showInfos(WebElement webElement, String elementName) {

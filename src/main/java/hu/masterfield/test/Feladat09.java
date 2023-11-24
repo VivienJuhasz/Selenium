@@ -62,4 +62,5 @@ public class Feladat09 {
         System.out.println("Location of " + elementName + " : " + webElement.getLocation());
 
     }
+
 }

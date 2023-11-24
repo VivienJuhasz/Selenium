@@ -73,4 +73,5 @@ public class Feladat18B {
         System.out.println("Location of " + elementName + " : " + webElement.getLocation());
         System.out.println("Text of " + elementName + " : " + webElement.getText());
     }
+
 }

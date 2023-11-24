@@ -10,7 +10,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 import java.time.Duration;
 
@@ -23,7 +22,7 @@ public class Feladat25 {
     @BeforeEach
     public void setup() {
         driver = WebBrowser.createDriver(WebBrowserType.Chrome);
-//      driver = WebBrowser.createDriver(WebBrowserType.Firefox);
+//        driver = WebBrowser.createDriver(WebBrowserType.Firefox);
 //      Firefox esetén StaleElementReferenceException-t kapunk
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -100,4 +99,5 @@ public class Feladat25 {
         }
         return webElement;
     }
+
 }

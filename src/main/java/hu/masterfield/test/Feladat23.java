@@ -35,7 +35,7 @@ public class Feladat23 {
     }
 
     @Test
-    public void testFeladat22() throws InterruptedException {
+    public void testFeladat23() throws InterruptedException {
         driver.get(baseURL);
         Thread.sleep(3000);
 
@@ -43,7 +43,7 @@ public class Feladat23 {
         Thread.sleep(3000);
 
         By[] locs = {By.id("xxxmultiplewindow"),
-                By.className("xxxmultiplewindow"),
+                     By.className("xxxmultiplewindow"),
                 By.xpath("//div[@class='xxxmultiplewindow']"),
                 By.cssSelector("div[class='xxxmultiplewindow']"),
                 By.cssSelector(".xxxmultiplewindow"),
@@ -109,4 +109,5 @@ public class Feladat23 {
         }
         return webElement;
     }
+
 }

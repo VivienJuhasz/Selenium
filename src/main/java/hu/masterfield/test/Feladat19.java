@@ -1,4 +1,5 @@
 package hu.masterfield.test;
+
 import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSetting;
 import hu.masterfield.browser.WebBrowserType;
@@ -79,5 +80,5 @@ public class Feladat19 {
         System.out.println("Location of " + elementName + " : " + webElement.getLocation());
         System.out.println("Text of " + elementName + " : " + webElement.getText());
     }
-}
 
+}

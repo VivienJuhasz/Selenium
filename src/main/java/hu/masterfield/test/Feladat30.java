@@ -1,19 +1,4 @@
 package hu.masterfield.test;
-import hu.masterfield.browser.WebBrowser;
-import hu.masterfield.browser.WebBrowserSetting;
-import hu.masterfield.browser.WebBrowserType;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-
-import java.time.Duration;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSetting;
@@ -123,4 +108,5 @@ public class Feladat30 {
         }
         return webElement;
     }
+
 }
