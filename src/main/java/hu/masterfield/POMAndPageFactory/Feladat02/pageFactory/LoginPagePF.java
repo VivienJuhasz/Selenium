@@ -4,13 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class LoginPagePF extends BasePage{
+
 
     @FindBy(id="user-name")
     WebElement userNameWebElement;
@@ -58,4 +55,6 @@ public class LoginPagePF extends BasePage{
     public void open() {
         driver.get("https://www.saucedemo.com/");
     }
+
+
 }
