@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b70c9f9-6b7b-46dd-8017-09012eda96a8" name="Changes" comment="peti">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/selenide/SauceLabsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/selenide/pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/selenide/pages/CompletePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/selenide/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/selenide/pages/OverviewPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/selenide/pages/ProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/masterfield/selenide/pages/YourInformationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +76,7 @@
       <recent name="hu.masterfield.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Feladat01">
+  <component name="RunManager">
     <configuration name="Feladat01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumBasic" />
       <extension name="coverage">
@@ -80,6 +88,37 @@
       <option name="PACKAGE_NAME" value="hu.masterfield.test" />
       <option name="MAIN_CLASS_NAME" value="hu.masterfield.test.Feladat01" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SauceLabsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumBasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.masterfield.selenide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.masterfield.selenide" />
+      <option name="MAIN_CLASS_NAME" value="hu.masterfield.selenide.SauceLabsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SauceLabsTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumBasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.masterfield.selenide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.masterfield.selenide" />
+      <option name="MAIN_CLASS_NAME" value="hu.masterfield.selenide.SauceLabsTest" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,6 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SauceLabsTest.testLogin" />
+        <item itemvalue="JUnit.SauceLabsTest" />
         <item itemvalue="JUnit.Feladat01" />
         <item itemvalue="JUnit.hu.masterfield.test in SeleniumBasic" />
       </list>
@@ -242,8 +283,27 @@
       <option name="project" value="LOCAL" />
       <updated>1700841748709</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="peti">
+      <option name="closed" value="true" />
+      <created>1701360073308</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701360073308</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="peti" />
